@@ -15,4 +15,6 @@ kubectl patch svc ml-pipeline-ui -n kubeflow \
   --patch='{"spec": {"ports": [{"nodePort": 30001, "port": 80}]}}'
 ```
 
-
+```bash
+kubectl get po --sort-by=.metadata.creationTimestamp
+```
