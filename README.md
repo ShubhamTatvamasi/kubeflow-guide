@@ -18,3 +18,7 @@ kubectl patch svc ml-pipeline-ui -n kubeflow \
 ```bash
 kubectl get po --sort-by=.metadata.creationTimestamp
 ```
+```bash
+kubectl delete po --field-selector=status.phase!=Running
+```
+
