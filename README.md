@@ -16,8 +16,18 @@ kubectl patch svc ml-pipeline-ui -n kubeflow \
 ```
 
 ```bash
+kubectl patch svc kiali -n istio-system \
+  --patch='{"spec": {"type": "NodePort"}}'
+
+kubectl patch svc kiali -n istio-system \
+  --patch='{"spec": {"ports": [{"nodePort": 30100, "port": 20001}]}}'
+```
+
+
+```bash
 kubectl get po --sort-by=.metadata.creationTimestamp
 ```
+
 ```bash
 kubectl delete po --field-selector=status.phase!=Running
 ```
