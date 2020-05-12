@@ -22,6 +22,7 @@ kubectl patch svc kiali -n istio-system \
 kubectl patch svc kiali -n istio-system \
   --patch='{"spec": {"ports": [{"nodePort": 30100, "port": 20001}]}}'
 ```
+> add /kiali
 
 
 ```bash
