@@ -1,6 +1,6 @@
 # kubeflow-guide
 
-[kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-autocomplete)
+[kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ```bash
 kubectl patch svc centraldashboard -n kubeflow \
