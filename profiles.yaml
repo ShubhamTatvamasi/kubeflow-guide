@@ -1,0 +1,60 @@
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: shubham
+spec:
+  owner:
+    kind: User
+    name: shubhamtatvamasi@gmail.com
+...
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: rishabh
+spec:
+  owner:
+    kind: User
+    name: rishabhkumar140999@gmail.com
+...
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: namitha
+spec:
+  owner:
+    kind: User
+    name: namithakonda09@gmail.com
+...
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: avirup
+spec:
+  owner:
+    kind: User
+    name: avirupchattaraj1234@gmail.com
+...
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: shubham-bhardwaj
+spec:
+  owner:
+    kind: User
+    name: shubhambhardwaj334@gmail.com
+...
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: aniket
+spec:
+  owner:
+    kind: User
+    name: aniketraj@thescriptgroup.in
+...
