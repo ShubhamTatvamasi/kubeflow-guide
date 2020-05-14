@@ -12,6 +12,28 @@ kubectl get svc istio-ingressgateway -n istio-system \
 > last I checked it was: 31380
 ---
 
+list all profiles
+```bash
+kubectl get profiles
+```
+
+create new profile
+```yaml
+kubectl apply -f - << EOF
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: shubham
+spec:
+  owner:
+    kind: User
+    name: shubhamtatvamasi@gmail.com
+EOF
+```
+
+
+
+
 if you want to change the node ports
 ```bash
 kubectl patch svc centraldashboard -n kubeflow \
