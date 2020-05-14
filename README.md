@@ -43,6 +43,17 @@ cert-manager | https://cert-manager.io
 
 ---
 
+Expose Kiali from Istio
+```bash
+kubectl patch svc kiali -n istio-system \
+  --patch='{"spec": {"type": "NodePort"}}'
+
+kubectl patch svc kiali -n istio-system \
+  --patch='{"spec": {"ports": [{"nodePort": 30100, "port": 20001}]}}'
+```
+> add /kiali
+---
+
 if you want to change the node ports
 ```bash
 kubectl patch svc centraldashboard -n kubeflow \
@@ -64,14 +75,7 @@ list all namespaces
 kubectl get ns 
 ```
 
-```bash
-kubectl patch svc kiali -n istio-system \
-  --patch='{"spec": {"type": "NodePort"}}'
 
-kubectl patch svc kiali -n istio-system \
-  --patch='{"spec": {"ports": [{"nodePort": 30100, "port": 20001}]}}'
-```
-> add /kiali
 
 ```bash
 kubectl get po --sort-by=.metadata.creationTimestamp
