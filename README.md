@@ -30,8 +30,16 @@ spec:
     name: shubhamtatvamasi@gmail.com
 EOF
 ```
+---
 
+Things to know before you begin learning kubeflow
 
+Names | Links
+--- | ---
+Istio | https://istio.io
+OpenEBS | https://openebs.io
+Knative | https://knative.dev
+cert-manager | https://cert-manager.io
 
 
 if you want to change the node ports
