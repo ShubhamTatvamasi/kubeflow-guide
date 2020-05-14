@@ -4,6 +4,14 @@
 
 [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
+get the nodeport of kubeflow centraldashboard
+```bash
+kubectl get svc istio-ingressgateway -n istio-system \
+  -o json | jq '.spec.ports[] | select(.port==80)'
+```
+> last I checked it was: 31380
+
+if you want to change the node ports
 ```bash
 kubectl patch svc centraldashboard -n kubeflow \
   --patch='{"spec": {"type": "NodePort"}}'
