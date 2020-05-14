@@ -4,7 +4,7 @@
 
 [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-get the nodeport of kubeflow centraldashboard
+Get the NodePort of Kubeflow Central Dashboard
 ```bash
 kubectl get svc istio-ingressgateway -n istio-system \
   -o json | jq '.spec.ports[] | select(.port==80)'
