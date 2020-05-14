@@ -17,6 +17,11 @@ list all profiles
 kubectl get profiles
 ```
 
+add multiple profiles
+```bash
+kubectl apply -f https://github.com/ShubhamTatvamasi/kubeflow-guide/raw/master/profiles.yaml
+```
+
 create new profile
 ```yaml
 kubectl apply -f - << EOF
