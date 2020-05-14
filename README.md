@@ -32,7 +32,7 @@ EOF
 ```
 ---
 
-Things to know before you begin learning kubeflow
+Things to know before we begin learning kubeflow
 
 Names | Links
 --- | ---
